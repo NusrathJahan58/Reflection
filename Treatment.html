@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Treatment & Rehab</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
+
+    <style type="">
+    h1{color: teal;}
+    h2{color: limegreen;}
+    h4{color: purple;}
+    h3{color: brown;}
+    /* Intro Section */
+#tf-intro {
+    background-color: #3d4449;
+    padding: 5% 0;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+/* Service Section */
+#tf-services { padding: 60px 0 }
+.section-header {
+    padding: 40px 0;
+    text-align: center;
+}
+.section-header h2 { text-transform: uppercase }
+.section-header h5 { letter-spacing: 1px }
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #f1f1f1;
+    top: 15px;
+    width: 400px;
+}
+.fancy span:before {
+    right: 100%;
+    margin-right: 10px;
+}
+.fancy span:after {
+    left: 100%;
+    margin-left: 10px;
+}
+/* service lists */
+.service { margin-bottom: 20px }
+.service .media-right i.fa {
+    text-align: center;
+    font-size: 30px;
+    background-color:#f56a6a;
+    color: #ffffff;
+    padding: 25px 0;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    margin: 0 10px;
+    margin-right: 20px;
+    width: 82px;
+    height: 80px;
+    transition: background-color 0.5s;
+}
+.service .media-left i.fa {
+    text-align: center;
+    font-size: 30px;
+    background-color: #f56a6a;
+    color: #ffffff;
+    padding: 25px 0;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    margin: 0 10px;
+    margin-left: 20px;
+    width: 82px;
+    height: 80px;
+    transition: background-color 0.5s;
+}
+.process:hover i.fa,
+.service:hover i.fa { background-color: #333333 }
+h4.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333;
+    line-height: 20px;
+}
+/* Why Us or Features Section */
+#tf-features,
+#feature { padding: 60px 0 }
+.features-content { padding: 0 30px 0 }
+.features-content h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #333333;
+}
+.nav.nav-pills > li > a {
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    padding: 25px;
+    border-bottom: 3px solid #cccccc;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.nav.nav-pills > li > a small {
+    text-transform: lowercase;
+    font-style: italic;
+}
+.nav.nav-pills > li > a:hover,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #f56a6a;
+    padding: 25px;
+    border-bottom: 3px solid #996600;
+}
+.nav-pills > li > a { border-radius: 4px }
+ul.features li span.fa {
+    font-size: 35px;
+    vertical-align: middle;
+    margin-right: 20px;
+    float: left;
+    clear: both;
+    margin-top: 5px;
+}
+/* Process Section */
+#tf-process { padding: 60px 0 }
+.process i.fa {
+    text-align: center;
+    font-size: 30px;
+    background-color: #f56a6a;
+    color: #ffffff;
+    padding: 25px 0;
+    border: 4px solid #ffffff;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    margin: 0 10px;
+    margin-right: 20px;
+    width: 92px;
+    height: 90px;
+    transition: background-color 0.5s;
+}
+#tf-process .gray-bg { position: relative }
+.gray-bg .vline {
+    position: absolute;
+    height: 100%;
+    padding: 5px;
+    border-left: 3px solid #ffffff;
+    left: 20%;
+}
+#process { padding: 60px 0 20px 0 }
+.process { margin-bottom: 40px }
+/* Contact Section */
+/*********************************
+
+**********************************/
+#tf-contact { padding: 60px 0 }
+
+.contact-detail {
+    text-align: center;
+    margin: 60px 0;
+}
+.contact-detail i.fa {
+    text-align: center;
+    font-size: 30px;
+    background-color: #f56a6a;
+    color: #ffffff;
+    padding: 25px 0;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    margin: 0 10px;
+    margin-right: 20px;
+    width: 82px;
+    height: 80px;
+    transition: background-color 0.5s;
+}
+.contact-detail:hover i.fa { background-color: #333333 }
+form#contact-form { padding: 40px 0 }
+.contact form#contact-form {padding: 0}
+.form-control:focus {
+    border-color: #f56a6a;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+p.help-block.text-danger ul li {
+    display: block;
+    margin-left: -20px;
+    color: #FFCC33;
+}
+#success .alert-danger {
+    color: #FFCC33;
+    background-color: #FDFDFD;
+    border-color: #FFCC33;
+    margin-bottom: 10px;
+}
+
+  </style>
+  </head>
+<body class="is-preload">
+    <div id="wrapper">
+
+                <!-- Main -->
+                    <div id="main">
+                        <div class="inner">
+
+                            <!-- Header -->
+                                <header id="header" style="background-image: url(imgs/1.png)">
+                                    <a href="index.html" class="logo"><img src="imgs/logo2.png" alt="logo" style="max-width: 200px"></a>
+                                    <ul class="icons">
+                                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                                        <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                                    </ul>
+                                </header>
+
+
+
+    
+
+  
+
+    <!-- Intro Section
+    ================================================== -->
+    <div id="tf-intro">
+        <div class="container"> <!-- container -->
+            <div class="row"> <!-- row -->
+
+                <div class="col-md-8 col-md-offset-2"> 
+                    <p>"Drug abuse treatment plans not only help addicts detoxify in a safe environment but also assist them through all stages of the recovery process".</p>
+                </div>
+                
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+
+    <!-- Service Section
+    ================================================== -->
+    <div id="tf-services">
+        <div class="container"> <!-- container --> 
+            <div class= "box" style="background: mintcream">
+
+            <div class="section-header">
+                <h2>Treatment <span class="highlight"><strong>Choices</strong></span></h2>
+                <h5><em>Treatment options for addiction depend on several factors, including what type of substance it is and how it affects the patients. Typically, treatment includes a combination of inpatient and outpatient programs, counseling (psychotherapy), self-help groups, pairing with individual sponsors, and medication.</em></h5>
+                <div class="fancy"></div>
+            </div>
+
+            <div class="row"> <!-- row -->
+                
+                <div class="col-md-6 text-right">  <!-- Left Content Col 6 -->
+                    <div class="media service"> <!-- Service #1 -->
+                        <div class="media-body">
+                            <h4 class="media-heading">INPATIENT</h4>
+                            <p>Inpatient programs offer the highest level of treatment care, with medically supervised detoxification and around-the-clock care and support.</p>
+                        </div>
+                        <div class="media-right media-middle">
+                          <!-- Trigger the modal with a button -->
+
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal1"><i class="fa fa-user-md">
+                            </i></button>
+                              <!-- Modal -->
+
+                               <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title"><h1>Inpatient Treatment </h1>
+                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                     <section>
+
+                                    <span class="image main"><img src="imgs/inpatient1.jpg" alt="" height="350px" /></span>
+
+                                
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>What is an inparient Drug Treatment?</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">Inpatient treatment, also referred to as residential treatment, provides the highest level of services for patients diagnosed with alcohol or other drug addiction. Typically, inpatient drug programs include medical detox services.Many who struggle with alcoholism find the most success with inpatient rehab treatment. Clients in this program typically begin with inpatient alcohol detox to rid their bodies of any harmful toxins from the drugs or alcohol. If necessary, they may also be prescribed medications to help reduce alcohol cravings or reduce withdrawal symptoms.
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>How Does Detox Work?</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">Detox is the first step in helping your brain and body heal from substance abuse. The detox process begins with evaluations by medical doctors and nurses to determine which, if any, medical interventions are needed. Detox is primarily a time to flush the chemicals from your body, which can be an uncomfortable experience without the right medical care to help ease discomfort and/or drug cravings. Hazelden Betty Ford medical staff will work with you to evaluate your level of discomfort and provide you with medications, if needed, to address any discomfort or cravings.
+
+                                    During the detox process, you will be medically monitored 24/7 until medical staff determine you are stable enough to take part in rehab programming and activities.</p>
+                                    
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>How This Type Of Care Fits Into Rehabitalitation?</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">At an inpatient rehabilitation facility (IRF), clinical teams coordinate medical treatment, specialized services, rehabilitation treatments, and patient-assistance services, all while providing the emotional support and encouragement that patient need to make great strides in recovery. Patients must be able to participate in a minimum of three hours of therapy per day.
+
+                                   Inpatient rehabilitation care is also known as hospital-level, or acute, rehabilitation care. This sophisticated level of care is not available in other settings, such as nursing homes, skilled nursing facilities, assisted living centers or extended care centers.
+
+                                   At Spaulding, the expertise and resources at our IRFs enable our staff to provide a high level of coordinated rehabilitation and medical care.</p>
+                                    
+                                    
+                                </section>
+                                </div>
+
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
+                                   </div>
+
+                                   </div>
+                                   </div>
+                               </div>
+                        </div>
+                    </div><!-- End Service #1 -->
+
+                    <div class="media service"> <!-- Service #2 -->
+                        <div class="media-body">
+                            <h4 class="media-heading">MEDICATIONS</h4>
+                            <p>Certain medications can mimic the effects of addictive drugs, which relieves withdrawal symptoms and cravings.</p>
+                        </div>
+                        <div class="media-right media-middle">
+                            <!-- Trigger the modal with a button -->
+
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2"><i class="fa fa-medkit">
+                            </i></button>
+                              <!-- Modal -->
+
+                               <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title"><h1>3 Medication For Alcoholism Treatment </h1>
+                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                     <section>
+
+                                    <span class="image main"><img src="imgs/medication.jpg" alt="" height="350px" /></span>
+
+                                
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Antabuse (Disulfiram) as a Drinking Deterrent</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">Antabuse (disulfiram) was the first medicine approved for the treatment of alcohol abuse and alcohol dependence. It works by causing a severe adverse reaction when someone taking the medication consumes alcohol. Most people who take it will vomit after a drink of alcohol. This, in turn, is thought to create a deterrent to drinking.
+                                    Initially, disulfiram was given in larger dosages to produce aversion conditioning to alcohol by making the patients very sick if they drank. Later, after many reported severe reactions (including some deaths), Antabuse was administered in smaller dosages to support alcohol abstinence.</p>
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Naltrexone for Alcohol Cravings</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">It works by blocking in the brain the "high" that people experience when they drink alcohol or take opioids like heroin and cocaine.
+                                    In the 1980s, animal studies discovered that naltrexone also reduced alcohol consumption. Human clinical trials followed in the late 80s and early 90s. These showed that when combined with psychosocial therapy, naltrexone could reduce alcohol cravings and decrease relapse rates in alcoholics.</p>
+                                    
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Campral (Acamprosate) for Discomfort</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">It works by reducing the physical distress and emotional discomfort people usually experience when they quit drinking.</p>
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Medication Gave Patients an Advantage</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">According to research, medications seem to be a positive part of the winning combination for alcohol use disorders. And, it is underused as a method for treating alcoholism.
+
+                                    "The most robust finding in the study is that those receiving any medication did much better than those who received no pills at all," says Professor Barbara Mason, Scripps Research Institute, and an author of the study.</p>
+                                    
+                                    
+                                    
+                                </section>
+                                </div>
+
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
+                                   </div>
+
+                                   </div>
+                                   </div>
+                               </div>
+                        </div>
+                    </div><!-- End Service #2 -->
+
+                    <div class="media service"> <!-- Service #3 -->
+                        <div class="media-body">
+                            <h4 class="media-heading">MOTIVATION</h4>
+                            <p>Motivational Enhancement Therapy (MET) works by helping addicted people learn how to change their own thoughts and behaviors.</p>
+                        </div>
+                        <div class="media-right media-middle">
+                            <!-- Trigger the modal with a button -->
+
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal3"><i class="fa fa-hand-paper-o">
+                            </i></button>
+                              <!-- Modal -->
+
+                               <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title"><h1>Motivational Enhencement </h1>
+                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                     <section>
+
+                                    <span class="image main"><img src="imgs/motiv.jpg" alt="" height="350px" /></span>
+
+                                
+                                    <hr class="major" />
+
+                                    
+                                    <p style="width: 85%;margin-right: 50%;">Motivational Enhancement Therapy (MET) is an intervention and counseling approach specifically designed to evoke internally motivated change. MET is often combined with other forms of counseling for addicted people, such as the 12-Step treatment method.
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>MET  Techniques</u></h2>
+                                    <p style="width: 85%;"><span style="color: #f56a6a;">Accepting resistance as part of the process</span> -  Therapists engage recovering addicts on a personal level, helping them realize how their behaviors are impacting their goals and relationships.</p>
+                                    
+
+                                   
+                                    <p style="width: 85%;"><Span style="color: #f56a6a;">Avoiding arguments</Span> - Therapists won’t argue with their patients about the degree of their drug or alcohol abuse. Patients are encouraged to have a positive response and outlook on MET.</p>
+                                    
+
+                                     <p style="width: 85%;"><span style="color: #f56a6a;">Supporting a recovering addict’s self-efficacy</span> - Recovering addicts must believe in their ability to achieve their goals. Therapists encourage positive thoughts and behaviors that reinforce the concept of self-efficacy.</p>
+
+                                     <p style="width: 85%;"><span style="color: #f56a6a;">Developing and expressing empathy</span> - Patients are encouraged to learn and develop empathy to learn how their actions affect others. This can be used as a motivational factor for change.</p>
+                                    
+                                </section>
+                                </div>
+
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
+                                   </div>
+
+                                   </div>
+                                   </div>
+                               </div>
+                        </div>
+                    </div> <!-- End Service #3 -->
+                </div> <!-- End Left Content Col 6 -->
+
+                <div class="col-md-6"> <!-- Right Content Col 6 -->
+                    <div class="media service"> <!-- Service #4 -->
+                        <div class="media-left media-middle">
+                            <!-- Trigger the modal with a button -->
+
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal4"><i class="fa fa-user-md">
+                            </i></button>
+                              <!-- Modal -->
+
+                               <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title"><h1>Outpatient Treatment </h1>
+                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                     <section>
+                                                        <header class="main">
+                                        <!-- <h1>10 MOST COMMON ADDTICTIONS</h1> -->
+                                    </header>
+
+                                    <span class="image main"><img src="imgs/outpatient.jpg" alt="" height="350px" /></span>
+                                                                        <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>What is an Outpatient Drug Treatment?</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">Inpatient treatment, also referred to as residential treatment, provides the highest level of services for patients diagnosed with alcohol or other drug addiction. Typically, inpatient drug programs include medical detox services.Many who struggle with alcoholism find the most success with inpatient rehab treatment. Clients in this program typically begin with inpatient alcohol detox to rid their bodies of any harmful toxins from the drugs or alcohol. If necessary, they may also be prescribed medications to help reduce alcohol cravings or reduce withdrawal symptoms.
+                                    
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Benefits of Outpatient Treatment</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">Outpatient substance abuse treatment provides those recovering from addiction with much-needed support as they transition back into their everyday lives. It’s important to remember that relapse is most common right after an individual exits residential treatment.
+
+                                    The extra encouragement and treatment provided by outpatient care plays an essential role in helping individuals achieve long-term sobriety and addiction recovery. 
+                                    Some key benefits of outpatient substance abuse treatment include:
+                                    <ul>
+                                            <li>Life Skill Development</li>
+                                            <li>Direct Access to Friends and Family</li>
+                                            <li>Flexibility to Work or Attend School</li>
+                                        </ul>
+                                    </p>
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Is an Outpatient Substance Abuse Treatment Program the Right Option for You?
+                                     </u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">Outpatient rehab is ideal for those who are familiar with the strategies and tools necessary to live life free of addiction but would still like extra support in staying sober. Additionally, outpatient treatment allows those in recovery to return to, or keep up with, work or school obligations while they receive ongoing care.</p>
+
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Why Outpatient Addiction Treatment May Not Be Right at This Time?
+                                     </u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">For many patients, especially those in need of medically guided detox, outpatient treatment is not an appropriate first step. That’s why it is helpful for those struggling with addiction and their families to work with addiction treatment specialists when searching for care.</p>
+
+                                    
+
+                                
+                                    
+
+                                    
+                                </section>
+                                </div>
+
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
+                                   </div>
+
+                                   </div>
+                                   </div>
+                               </div>
+                        
+
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Outpatient</h4>
+                            <p>Outpatient treatment is an ideal option for people who are motivated to stop using their substance of choice, but require the flexibility of a program that will work around their schedules.</p>
+                        </div>
+                    </div><!-- end Service #4 -->
+
+                    <div class="media service"> <!-- Service #5 -->
+                        <div class="media-left media-middle">
+                            <!-- Trigger the modal with a button -->
+
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal5"><i class="fa fa-check-square">
+                            </i></button>
+                              <!-- Modal -->
+
+                               <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title"><h1>New To The 12 Steps? That's Ok! </h1>
+                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                     <section>
+
+                                    <span class="image main"><img src="imgs/step.jpg" alt="" height="350px" /></span>
+                                      <hr class="major" />
+
+                                   <h2 ><u>The 12 steps to recovery is an effective approach to drug or alcohol addiction treatment we fully embrace.</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">The 12 Steps were created by the founders of Alcoholics Anonymous to establish guidelines for the best way to overcome an addiction to alcohol. The program gained enough success in its early years for other addiction support groups to adapt the steps to their own needs.</p>
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Applying the steps</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">The 12-step approach to rehabilitation treatment is embraced throughout the world, so it’s always easy to find support where you are or wherever you go. Accordingly, we advise patients to keep in contact with ‘sober supports’ they make during treatment at one of our locations. We also encourage them to continue attending 12-step groups on a regular basis after discharge. Being able to discuss mistakes or relapses, as needed, in a supportive environment helps to keep patients accountable for their actions.</p>
+                                    
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>The 12-Step Fellowship</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">
+                                    <ol style="color: tomato;" type="decimal">
+                                            <li>We admitted we were powerless over alcohol—that our lives had become unmanageable.</li>
+                                            <li>Came to believe that a Power greater than ourselves could restore us to sanity.</li>
+                                            <li>Made a decision to turn our will and our lives over to the care of God as we understood Him.</li>
+                                            <li>Made a searching and fearless moral inventory of ourselves.</li>
+                                            <li>Admitted to God, to ourselves and to another human being the exact nature of our wrongs.</li>
+                                            <li>Were entirely ready to have God remove all these defects of character</li>
+                                            <li>Humbly asked Him to remove our shortcomings</li>
+                                            <li>Made a list of persons we had harmed, and became willing to make amends to them all.</li>
+                                            <li>Made direct amends to such people wherever possible, except when to do so would injure them or others.</li>
+                                            <li>Continued to take personal inventory and when we were wrong promptly admitted it.</li>
+                                            <li>Sought through prayer and meditation to improve our conscious contact with God as we understood Him, praying only for knowledge of His will for us and the power to carry that out.</li>
+                                            <li>Having had a spiritual awakening as the result of these steps, we tried to carry this message to alcoholics [addicts] and to practice these principles in all our affairs.</li>
+                                        </ol></p>
+
+
+
+                                    
+                                </section>
+                                </div>
+
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
+                                   </div>
+
+                                   </div>
+                                   </div>
+                               </div>
+                        
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">12-step</h4>
+                            <p>The basic premise of the 12-Step model in addiction treatment is that people can help one another achieve and maintain abstinence from drugs or alcohol.</p>
+                        </div>
+                    </div> <!-- end Service #5 -->
+
+                    <div class="media service"> <!-- Service #6 -->
+                        <div class="media-left media-middle">
+                            <!-- Trigger the modal with a button -->
+
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal6"><i class="fa fa-user-circle-o">
+                            </i></button>
+                              <!-- Modal -->
+
+                               <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title"><h1>Psychaiatric Treatment</h1>
+                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                     <section>
+
+                                    <span class="image main"><img src="imgs/phy.jpg" alt="" height="350px" /></span>
+
+                                
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Do Psychiatrists Provide Addiction Treatment?</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">When it comes to addiction treatment, it’s not just psychologists, therapists, and drug and alcohol counselors who work to help you in recovery. Psychiatrists, who are physicians that specialize in the diagnosis and treatment of psychiatric disorders, are just as likely to be part of your addiction treatment.</p>
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Understanding Mental Illness</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">Mental illnesses can take many forms, just as physical illnesses do. Major mental illnesses such as schizophrenia or bipolar disorder rarely appear “out of the blue.” Most often family, friends, teachers, or individuals themselves recognize that “something is not quite right” about their thinking, feelings, or behavior before one of these illnesses appears in its full-blown form. Being informed about developing symptoms, or early warning signs, can lead to intervention that can help reduce the severity of an illness. It may even be possible to delay or prevent a major mental illness altogether.</p>
+                                    
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Modern Understanding of Co-occurring Disorders</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">Most modern psychiatrists view addiction not as a temporary or one-time occurrence, but instead as a chronic disease that must be acknowledged and managed throughout a person’s entire life. Additionally, the field of psychiatry have recently begun exploring the relationships between this disease and other mental health issues that people struggle with. When a person is dealing with both an addiction and one or more mental health concerns simultaneously, he is said to have co-occurring disorders. <a href="https://www.samhsa.gov/medication-assisted-treatment">SAMHSA</a> lists the following most common types of mental health conditions that occur alongside addictions:
+                                    <ul>
+                                            <li>Anxiety</li>
+                                            <li>Attention deficit disorder</li>
+                                            <li>Bipolar disorder</li>
+                                            <li>Borderline personality disorder</li>
+                                            <li>Eating disorders</li>
+                                            <li>Major depression</li>
+                                            <li>Mood disorders</li>
+                                            <li>Post-traumatic stress disorder</li>
+                                        </ul></p>
+
+
+                                    <hr class="major" />
+
+                                    <h2 style="margin-right: 50%;"><u>Violence</u></h2>
+                                    <p style="width: 85%;margin-right: 50%;">In today’s media reports about mental illness, there is a tendency to emphasize a supposed link between violence and mental illness. News stories regularly suggest that there is a strong connection between mental illness and crime. But the majority of people who are violent do not suffer from mental illnesses. In fact, people with a mental illness are more likely to be the victims, rather than the perpetrators of violence.
+                                        <img style="width: 118%;" src="imgs/v.jpg"></p>
+                                    
+                                    
+                                    
+                                </section>
+                                </div>
+
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
+                                   </div>
+
+                                   </div>
+                                   </div>
+                               </div>
+                        
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">PSYCHIATRIC</h4>
+                            <p>Just as with other medical illnesses, early intervention can make a crucial difference in preventing what could become a lifelong and potentially disabling psychiatric disorder.</p>
+                        </div>
+                    </div> <!-- end Service #6 -->
+                </div><!-- end Right Content Col 6 -->
+                
+            </div><!-- end row -->
+        </div>
+
+        </div><!-- end container -->
+    </div>
+
+   
+        
+    
+
+    <!-- Features Section
+    ================================================== -->
+    <div id="tf-features">
+        <div class="box" style="background: mintcream">
+        <div class="container">
+            
+            <div class="section-header">
+                <h2>Treatment & <span class="highlight"><strong>Rehab</strong></span></h2>
+                <h5><em>Recovery is possible</em></h5>
+                <div class="fancy"></div>
+            </div>
+        </div>
+
+        <div id="feature" class="gray-bg"> <!-- fullwidth gray background -->
+            <div class="container"> <!-- container -->
+                <div class="row" role="tabpanel"> <!-- row -->
+                    <div class="col-md-4 col-md-offset-1"> <!-- tab menu col 4 -->
+
+                        <ul class="features nav nav-pills nav-stacked" role="tablist">
+                            <li role="presentation" class="active">  <!-- feature tab menu #1 -->
+                                <a href="#f1" aria-controls="f1" role="tab" data-toggle="tab">
+                                    <span class="fa fa-plus-square"></span>
+                                    What's<h6>Rehab?</h6> 
+                                </a>
+                            </li>
+                            <li role="presentation"> <!-- feature tab menu #2 -->
+                                <a href="#f2" aria-controls="f2" role="tab" data-toggle="tab">
+                                    <span class="fa fa-plus-square"></span>
+                                    Before<h6>Rehab?</h6> 
+                                </a>
+                            </li>
+                            <li role="presentation"> <!-- feature tab menu #3 -->
+                                <a href="#f3" aria-controls="f3" role="tab" data-toggle="tab">
+                                    <span class="fa fa-plus-square"></span>
+                                    During<h6>Rehab?</h6> 
+                                </a>
+                            </li>
+                            <li role="presentation"> <!-- feature tab menu #4 -->
+                                <a href="#f4" aria-controls="f4" role="tab" data-toggle="tab">
+                                    <span class="fa fa-plus-square"></span>
+                                    After<h6>Rehab?</h6> 
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div><!-- end tab menu col 4 -->
+
+                    <div class="col-md-6"> <!-- right content col 6 -->
+                        <!-- Tab panes -->
+                        <div class="tab-content features-content"> <!-- tab content wrapper -->
+                            <div role="tabpanel" class="tab-pane fade in active" id="f1"> <!-- feature #1 content open -->
+                                <h4>Rehab</h4>
+                                <p>A drug rehabilitation program may officially last for only a few months, but rehab is much more than just a 90-day fix. Recovery is a process that evolves through a series of stages, and your growth in sobriety can continue for the rest of your life.</p>
+                                <img src="imgs/reb.jpg" class="img-responsive" alt="..."  height="300px" width="500px">
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="f2"> <!-- feature #2 content -->
+                                <h4>Some Things You Should Know Before Going to Drug Rehab</h4>
+                                <p><ul>
+                                    <li>90-Day rehab is hard work, but you’ll have a lot of support.</li>
+                                    <li>Rehab isn’t a magic cure, but it’s an effective treatment for addiction.</li>
+                                    <li>Treatment continues after rehab.</li>
+                                    <li>Take care of work and family obligations.</li>
+                                    <li>Tie up any financial or legal loose ends.</li>
+                                    <li>There is very little communucation with the outside world.</li>
+                                    <li>Your life will never be the same.</li>
+                                </li></ul></p>
+                                <img src="imgs/in2.jpg" class="img-responsive"  alt="..."  height="300px" width="500px">
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="f3"> <!-- feature #3 content -->
+                                <h4>Why Can’t I Get Sober On My Own?</h4>
+                                <p>There are two big reasons to get professional help when quitting drugs or alcohol: ensuring safety during detox and setting the groundwork for lasting recovery.
+                                Rehab centers are designed to help you through every step of the process. Once they’ve determined your individual needs, they’ll create a customized treatment plan that is right for you.
+                                Some of the factors that go into your customized plan include:
+                                <ol>
+                                    <li>The severity of your addiction</li>
+                                    <li>The type of substance you were addicted to</li>
+                                    <li>The presence of co-occurring disorders</li>
+                                    <li>Family environments and social circles</li>
+                                </ol>
+                            </p>
+                                <img src="imgs/alcohol.jpg" class="img-responsive" alt="..." height="300px" width="500px">
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="f4"> <!-- feature #4 content -->
+                                <h4>Life After Rehab</h4>
+                                <p>
+                                    <ul>
+                                        <li>After completing detoxification and inpatient rehabilitation, a recovering addict will return to normal life. </li>
+                                        <li>Ones can pick up some drug-free hobbies recovering include:
+
+                                              - Playing sports
+                                              - Taking a class
+                                              - Volunteering</li>
+                                        <li>Listing goals and specific steps on how to achieve each one.</li>
+                                        <li>Joining local support group meetings.</li>
+
+                                    </ul>
+                                </p>
+                                <img src="imgs/after.jpg" class="img-responsive" alt="..."  height="300px" width="500px">
+                            </div>
+
+                        </div> <!-- end tab content wrapper -->
+                    </div><!-- end right content col 6 -->
+
+                </div> <!-- end row -->
+
+            </div> <!-- end container -->
+        </div><!-- end fullwidth gray background -->
+    </div>
+</div>
+
+     <div class="container"> <!-- container -->
+        <div class="box" style="background: mintcream">
+            <div class="section-header">
+                <h2>Know More About<span class="highlight"><strong>Rehab</strong></span></h2>
+                 <video width="500" height="300" controls>
+    <source src="imgs/rehab.mp4" type="video/mp4">
+    </video>
+                <div class="fancy"></div>
+            </div>
+        </div>
+        </div><!-- end container -->
+
+    
+
+ 
+
+    <!-- Process Section
+    ================================================== -->
+    <div id="tf-process">
+        <div class="box" style="background: mintcream">
+        <div class="container"> <!-- container -->
+
+            <div class="section-header">
+                <h2>Support<span class="highlight"><strong>Groups</strong></span></h2>
+                <h5><em>Choose your reliable group</em></h5>
+                <div class="fancy"></div>
+            </div>
+        </div><!-- end container -->
+
+        <div class="gray-bg"> <!-- fullwidth gray background -->
+            <div class="container"><!-- container -->
+                <div class="vline"></div> <!--  Vertical Line -->
+                <div id="process" class="row"> <!-- row -->
+
+                    <div class="col-md-10 col-md-offset-1">
+
+                        <div class="media process"> <!-- Process #1 -->
+                            <div class="media-right media-middle">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Research</h4>
+                                <p>Support groups can provide emotional guidance and support for addicted people when cravings strike.So find those people who also want a sober life.Have those people who can be with you!</p>
+                            </div>
+                        </div><!-- Process #1 -->
+
+                        <div class="media process"> <!-- Process #2 -->
+                            <div class="media-right media-middle">
+                                <i class="fa fa-undo"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Self-Help Group</h4>
+                                <p>In a self-help group, the members share a common problem, often a common disease or addiction. Self-help groups can occur in a wide variety of forms, from two individuals sharing experience and coping strategies, to small groups gathering in community meeting rooms, to large, incorporated organizations offering information, support and advocacy services.</p>
+                            </div>
+                        </div><!-- Process #2 -->
+
+                        <div class="media process"> <!-- Process #3 -->
+                            <div class="media-right media-middle">
+                                <i class="fa fa-address-book-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Meeting</h4>
+                                <p>There are several prominent support groups for addiction, including Alcoholics Anonymous, Narcotics Anonymous,Cocaine Anonymous etc.Many people have become sober with the help of addiction support groups. However, support groups are only one part of addiction treatment.Members of these groups are of all races and religions and all that is necessary is to admit that there is a problem, that it is out of control and that you want help and/or support. Meetings are free and there are no membership requirements beyond a desire to recover, though for some groups, meetings can be “open” (anyone can attend) or “closed” (attendance is limited to people who want to stop drinking, using drugs, or engaging in the behavior the group is focused on).</p>
+                            </div>
+                        </div><!-- Process #3 -->
+                        
+                    </div>
+
+                </div> <!-- end row -->
+            </div><!-- end container -->
+        </div>
+        </div>  <!-- end fullwidth gray background -->
+    </div>
+
+    
+    
+    <!-- Contact Section
+    ================================================== -->
+    <div id="tf-contact">
+       
+        <div class="container"> <!-- container -->
+            <div class="section-header">
+                <h2>Leave A <span class="highlight"><strong>Reply</strong></span></h2>
+                <div class="fancy"></div>
+            </div>
+        </div><!-- end container -->
+
+      
+        <div class="container"><!-- container -->
+            <div class="box" style="background: darkcyan"><br>
+
+            <div class="row text-center"> <!-- contact form outer row with centered text-->
+                <div class="col-md-10 col-md-offset-1"> <!-- col 10 with offset 1 to centered -->
+                    <form id="contact-form" class="form" name="sentMessage" novalidate> <!-- form wrapper -->
+
+                        <div class="row"> <!-- nested inner row -->
+
+                            <!-- Input your name -->
+                            <div class="col-md-4">
+                                <div class="form-group"> <!-- Your name input -->
+                                    <input type="text" autocomplete="off" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+                            <!-- Input your email -->
+                            <div class="col-md-4">
+                                <div class="form-group"> <!-- Your email input -->
+                                    <input type="email" autocomplete="off" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+                            <!-- Input your Phone no. -->
+                            <div class="col-md-4">
+                                <div class="form-group"> <!-- Your email input -->
+                                    <input type="text" autocomplete="off" class="form-control" placeholder="Your Phone No. *" id="phone" required data-validation-required-message="Please enter your phone no.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+                        </div><!-- end nested inner row -->
+
+                        <!-- Message Text area -->
+                        <div class="form-group"> <!-- Your email input -->
+                            <textarea class="form-control" rows="7" placeholder="Tell Us Something..." id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <p class="help-block text-danger"></p>
+                            <div id="success"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary tf-btn color">Send Message</button> <!-- Send button -->
+
+                    </form><!-- end form wrapper -->
+                </div><!-- end col 10 with offset 1 to centered -->
+            </div> <!-- end contact form outer row with centered text-->
+
+        </div><!-- end container -->
+</div>
+    </div>
+</div>
+</div>
+    <!-- Sidebar -->
+                    <div id="sidebar">
+                        <div class="inner">
+
+                            <!-- Search -->
+                                <section id="search" class="alt">
+                                    <form method="post" action="#">
+                                        <input type="text" name="query" id="query" placeholder="Search" />
+                                    </form>
+                                </section>
+
+                            <!-- Menu -->
+                                <nav id="menu">
+                                    <header class="major">
+                                        <h2>Menu</h2>
+                                    </header>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><span class="opener">Addiction Info</span>
+                                            <ul>
+                                                <li><a href="addiction.html">What Is Addiction?</a></li>
+                                                <li><a href="10-common-addiction.html">10 Most Common Addictions</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><span class="opener">Drug Description</span>
+                                            <ul>
+                                                <li><a href="Drug-classification.html">Drug Classification</a></li>
+                                                <li><a href="symptoms.html">Symptoms & Warnings</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li><a href="Treatment.html">Treatment & Rehab</a></li>
+                                                
+                                        
+                                        <li><a href="Recovery.html">Recovery & Motivation</a></li>
+                                                
+                                
+                                        <li><a href="blog.html">Blog</a></li>
+                                                
+                                    </ul>
+                                </nav>
+
+                            <!-- Section -->
+                                <section>
+                                    <header class="major">
+                                        <h2>News Portal</h2>
+                                    </header>
+                                    <div class="mini-posts">
+                                        <article>
+                                            <a href="#" class="image"><img src="imgs/newss.jpg" alt="" /></a>
+                                            <h3>Bangladesh has 7 million drug addicts, ‘over half of them are addicted to yaba’</h3>
+                                            <p>Bangladesh has at least 7 million drug addicts and 5 million of them are hooked on yaba pills, according to people familiar with the situation.</p>
+                                        <ul class="actions">
+                                        <li><a href="https://bdnews24.com/bangladesh/2018/05/21/bangladesh-has-7-million-drug-addicts-over-half-of-them-are-addicted-to-yaba" class="button">More</a></li>
+                                    </ul>
+                                        </article>
+                                        <article>
+                                            <a href="https://www.ncadd.org/about-addiction/support/what-is-prevention" class="image"><img src="imgs/prevention.jpg" alt="" /></a>
+                                            <h3>Can alcoholism and addiction be prevented?</h3>
+                                            <p>In a society that continually promotes alcohol and drug use at every level, the need to provide education on the dangers of alcohol and drug use and its effect on children has never been greater. NCADD believes education on this critical threat needs to</p>
+                                        </article>
+                                    </div>
+                                    <ul class="actions">
+                                        <li><a href="https://www.ncadd.org/about-addiction/support/what-is-prevention" class="button">More</a></li>
+                                    </ul>
+                                </section>
+
+                            <!-- Section -->
+                                <section>
+                                    <header class="major">
+                                        <h2>Get in touch</h2>
+                                    </header>
+                                    <p>
+                                        Stay Tuned With Reflection!
+                                    </p>
+                                    <ul class="contact">
+                                        <li class="fa-envelope-o"><a href="#">information@reflection.tld</a></li>
+                                        <li class="fa-phone">(000) 000-0000</li>
+                                        <li class="fa-home">1234 Somewhere Road #8254<br />
+                                        Nashville, TN 00000-0000</li>
+                                    </ul>
+                                </section>
+
+                            <!-- Footer -->
+                                <footer id="footer">
+                                    <p class="copyright">&copy; Untitled. All rights reserved</p>
+                                </footer>
+
+                        </div>
+                    </div>
+
+            </div>
+
+<!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+    
+  
+
+  </body>
+</html>
